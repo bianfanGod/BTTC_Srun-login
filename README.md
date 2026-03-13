@@ -18,11 +18,6 @@
  * 填写配置：用记事本打开 config.ini，填入你的学号和密码并保存。
  * 正式运行：再次双击 .exe 即可启动监控。
 
-##📦 开发者打包命令
-
-如果你修改了源码并想重新生成 .exe，请在终端执行：
-pyinstaller -F -w --hidden-import plyer.platforms.win.notification srun_keepalive.py
-
 ##⚠️ 免责声明
 本工具仅用于学习网络协议分析及自动化技术，请务必遵守所在学校的互联网使用守则。
 
