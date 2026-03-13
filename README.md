@@ -1,27 +1,21 @@
-# SZU Srun Client
+#🚀 Srun-KeepAlive
+深澜校园网自动登录与断网自愈助手
+这是一个轻量级的 Windows 后台工具，专门解决校园网频繁掉线、需要重复手动登录的烦恼。它能像“守护进程”一样默默运行，确保你的电脑始终处于联网状态。
+##🌟 核心功能
+ * 全自动重连：后台~~并不~~智能监测，掉线后~~分钟级~~自动完成认证。
+ * 静默无感：采用 Windows 原生通知提醒，不弹黑框，不打断你的游戏或工作。
+ * 配置简单：首运行自动生成 config.ini，账号密码填写一次即可。
+ * 安全合规：复刻原加密协议，非暴力破解。
+##🛠️ 快速开始
+ * 下载程序：获取打包好的 srun_keepalive.exe。
+ * 首次初始化：双击运行，右下角弹出通知后，文件夹内会出现 config.ini。
+ * 填写配置：用记事本打开 config.ini，填入你的学号和密码并保存。
+ * 正式运行：再次双击 .exe 即可启动监控。
+##📦 开发者打包命令
+如果你修改了源码并想重新生成 .exe，请在终端执行：
+pyinstaller -F -w --hidden-import plyer.platforms.win.notification srun_keepalive.py
 
-一个用于在命令行环境下登陆深大校园网的客户端, 适用于 srun 认证系统 (drcom 认证系统请移步 [login_szu_network](https://github.com/Caterpie771881/login_szu_network))
-
-~~需要 python3 环境, 由于认证逻辑比较复杂, 所以没用 shell 脚本来写~~
-
-最新客户端使用 golang 编写, 无需依赖 python 环境即可实现跨平台
-
-若所在平台支持 python3, 也可以使用 `PyClient` 文件夹下的脚本
-
-# 使用方式
-
-## golang 版客户端
-
-在 [Releases](https://github.com/Caterpie771881/szu_srun_client/releases) 中下载对应平台的二进制文件并运行即可
-
-PS: 运行前请保证二进制文件有可执行权限
-
-## python 版客户端
-
-保证所在机器有 python3 环境, 将本项目中的 [PyClient](./PyClient/) 文件夹复制到机器上
-
-然后执行以下命令
-
-```
-cd PyClient & chmod +x main.py & python3 main.py
-```
+##⚠️ 免责声明
+本工具仅用于学习网络协议分析及自动化技术，请务必遵守所在学校的互联网使用守则。
+本项目增加部分~~大多~~由ai生成
+Thanks to Gemini 3 Pro
